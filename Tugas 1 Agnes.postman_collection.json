@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "1924629a-4d61-4284-b522-21aaabc1e724",
+		"name": "Tugas 1 Agnes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49014568",
+		"_collection_link": "https://agnesmonica071205-5052342.postman.co/workspace/Agnes-Monica's-Workspace~7759ebe2-16b8-4048-858f-ab4123bbe840/collection/49014568-1924629a-4d61-4284-b522-21aaabc1e724?action=share&source=collection_link&creator=49014568"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Smart TV Samsung 43 Inch\",\r\n    \"purchaseDate\" : \"2024-05-15T00:00:00.000Z\",\r\n    \"expiryDate\" : \"2026-05-15T00:00:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/garansi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garansi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Smart TV Tosiba 32 Inch\",\r\n    \"purchaseDate\" : \"2024-05-15T00:00:00.000Z\",\r\n    \"expiryDate\" : \"2026-05-15T00:00:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/garansi/68f34f9cd8a7cf7738f4dfa0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garansi",
+						"68f34f9cd8a7cf7738f4dfa0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/garansi/68f34f9cd8a7cf7738f4dfa0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"garansi",
+						"68f34f9cd8a7cf7738f4dfa0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
