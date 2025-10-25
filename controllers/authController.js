@@ -66,3 +66,29 @@ export const login = async (req, res) => {
         });
     }
 }
+
+export const getProfile = async (req, res) => {
+    try {
+        const user = req.user;
+
+        if(!user) {
+            return res.status(404).json({
+                message: "User tidak ditemukan",
+                data: null
+            });
+        }
+
+        res.status(200).json({
+            message: "Berhasil mendapatkan profile user",
+            data: {
+                username: user.username,
+                email: user.email
+            }
+        });
+    } catch (error) {
+        res.status(500).json({
+            message: e.message, 
+            data: null
+        });
+    }
+};
