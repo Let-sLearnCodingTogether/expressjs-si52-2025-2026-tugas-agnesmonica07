@@ -16,7 +16,7 @@ export const protect = (req, res, next) => {
 
         req.user = user;
 
-        return next(); //untuk mengizinkan user lwt
+        return next(); 
     }
     )(req, res, next);
 };
